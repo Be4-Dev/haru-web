@@ -1,0 +1,22 @@
+{
+    "name": "@haru/design-tokens",
+    "version": "0.0.0",
+    "license": "MIT",
+    "main": "src/index.ts",
+
+    "author": "mdzn",
+    "homepage": "https://github.com/Be4-Dev/haru-web#readme",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Be4-Dev/haru-web"
+    },
+    "bugs": {
+      "url": "https://github.com/Be4-Dev/haru-web/issues"
+    },
+
+    "sideEffects": false,
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+  }
