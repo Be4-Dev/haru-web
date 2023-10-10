@@ -1,0 +1,16 @@
+{
+  "source": ["data/**/*.tokens.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "prefix": "haru",
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    }
+  }
+}
