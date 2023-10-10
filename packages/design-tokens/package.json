@@ -18,6 +18,8 @@
   "sideEffects": false,
   "devDependencies": {
     "style-dictionary": "^3.8.0",
-    "token-transformer": "^0.0.33"
+    "token-transformer": "^0.0.33",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
   }
 }
