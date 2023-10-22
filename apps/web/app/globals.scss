@@ -1,0 +1,13 @@
+@import "@haru/design-tokens/variables";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(#{$haru-semantic-color-background});
+  margin: 0;
+
+  /* Typography */
+  font-size: 100%;
+}

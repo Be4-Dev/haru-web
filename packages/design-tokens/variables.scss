@@ -1,0 +1,100 @@
+/* Primitive Tokens */
+$haru-primitive-font-lineHeight-140: 140;
+$haru-primitive-font-lineHeight-150: 150;
+$haru-primitive-font-lineHeight-160: 160;
+$haru-primitive-font-size-12: 12;
+$haru-primitive-font-size-14: 14;
+$haru-primitive-font-size-16: 16;
+$haru-primitive-font-size-18: 18;
+$haru-primitive-font-size-20: 20;
+$haru-primitive-font-size-24: 24;
+$haru-primitive-font-size-32: 32;
+$haru-primitive-font-weight-300: 300;
+$haru-primitive-font-weight-400: 400;
+$haru-primitive-font-weight-700: 700;
+$haru-primitive-color-gray-50: rgba(247, 248, 249, 1);
+$haru-primitive-color-gray-100: rgba(239, 240, 241, 1);
+$haru-primitive-color-gray-200: rgba(228, 229, 230, 1);
+$haru-primitive-color-gray-300: rgba(211, 212, 213, 1);
+$haru-primitive-color-gray-400: rgba(174, 175, 176, 1);
+$haru-primitive-color-gray-500: rgba(142, 143, 144, 1);
+$haru-primitive-color-gray-600: rgba(102, 103, 104, 1);
+$haru-primitive-color-gray-700: rgba(83, 84, 85, 1);
+$haru-primitive-color-gray-800: rgba(53, 54, 55, 1);
+$haru-primitive-color-gray-900: rgba(21, 22, 23, 1);
+$haru-primitive-color-red-300: rgba(250, 96, 106, 1);
+$haru-primitive-color-white: rgba(255, 255, 255, 1);
+
+/* Semantic Tokens */
+$haru-semantic-size-unit: 0.1;
+$haru-semantic-spacing-x1: 4;
+$haru-semantic-spacing-x2: 8;
+$haru-semantic-spacing-x3: 12;
+$haru-semantic-spacing-x4: 16;
+$haru-semantic-spacing-x5: 20;
+$haru-semantic-spacing-x6: 24;
+$haru-semantic-spacing-x8: 32;
+$haru-semantic-spacing-x10: 40;
+$haru-semantic-spacing-x12: 48;
+$haru-semantic-spacing-x16: 64;
+$haru-semantic-spacing-x20: 80;
+$haru-semantic-spacing-x24: 96;
+$haru-semantic-spacing-x28: 112;
+$haru-semantic-spacing-x32: 128;
+$haru-semantic-spacing-x40: 160;
+$haru-semantic-spacing-x48: 192;
+$haru-semantic-spacing-x56: 224;
+$haru-semantic-spacing-x64: 256;
+$haru-semantic-border-radius-small: 4;
+$haru-semantic-border-radius-medium: 6;
+$haru-semantic-border-radius-large: 8;
+$haru-semantic-border-width-level1: 1;
+$haru-semantic-color-primary: $haru-primitive-color-red-300;
+$haru-semantic-font-family-default: Pretendard;
+$haru-semantic-font-size-h1: $haru-primitive-font-size-32;
+$haru-semantic-font-size-h2: $haru-primitive-font-size-24;
+$haru-semantic-font-size-h3: $haru-primitive-font-size-20;
+$haru-semantic-font-size-large: $haru-primitive-font-size-18;
+$haru-semantic-font-size-medium: $haru-primitive-font-size-16;
+$haru-semantic-font-size-small: $haru-primitive-font-size-14;
+$haru-semantic-font-size-tiny: $haru-primitive-font-size-12;
+$haru-semantic-font-lineHeight-small: $haru-primitive-font-lineHeight-140;
+$haru-semantic-font-weight-light: $haru-primitive-font-weight-300;
+$haru-semantic-font-lineHeight-medium: $haru-primitive-font-lineHeight-150;
+$haru-semantic-font-weight-regular: $haru-primitive-font-weight-400;
+$haru-semantic-font-weight-bold: $haru-primitive-font-weight-700;
+$haru-semantic-font-lineHeight-large: $haru-primitive-font-lineHeight-160;
+$haru-semantic-size-small-height: 32;
+$haru-semantic-size-small-paddingX: 16;
+$haru-semantic-size-small-borderRadius: $haru-semantic-border-radius-small;
+$haru-semantic-size-small-fontSize: $haru-semantic-font-size-small;
+$haru-semantic-size-medium-height: 40;
+$haru-semantic-size-medium-paddingX: 20;
+$haru-semantic-size-medium-borderRadius: $haru-semantic-border-radius-medium;
+$haru-semantic-size-medium-fontSize: $haru-semantic-font-size-medium;
+$haru-semantic-size-large-height: 48;
+$haru-semantic-size-large-paddingX: 32;
+$haru-semantic-size-large-borderRadius: $haru-semantic-border-radius-large;
+$haru-semantic-size-large-fontSize: $haru-semantic-font-size-large;
+
+/* Unit */
+@function size($size) {
+  @return #{$size * $haru-semantic-size-unit}rem;
+}
+
+/* Theme */
+$haru-semantic-color-background: --haru-semantic-color-background;
+
+$haru-theme-light: (
+  $haru-semantic-color-background: $haru-primitive-color-white,
+);
+
+@mixin spread-map($map: ()) {
+  @each $key, $value in $map {
+    #{$key}: $value;
+  }
+}
+
+.light {
+  @include spread-map($haru-theme-light);
+}

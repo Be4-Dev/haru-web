@@ -1,0 +1,6 @@
+@import "@haru/design-tokens/variables";
+
+.Button {
+  background: $haru-semantic-color-primary;
+  padding: size($haru-semantic-spacing-x4) size($haru-semantic-spacing-x8);
+}
